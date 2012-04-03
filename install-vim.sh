@@ -18,7 +18,7 @@ mkdir patches
 cd patches
 
 # XXX when adding patches
-curl -O ftp://ftp.vim.org/pub/vim/patches/7.3/7.3.[001-434]
+curl -O ftp://ftp.vim.org/pub/vim/patches/7.3/7.3.[001-487]
 
 cd ..
 cat patches/7.3.* | patch -p0
