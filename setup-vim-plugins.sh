@@ -7,12 +7,14 @@ if [ -d ./.vim ]; then
 fi
 git clone git://github.com/dameninngenn/.vim.git
 
-# XXX ssh or git
-# do replace
-
 cd .vim
 git submodule init
 git submodule update
+
+mkdir bundle
+cd bundle
+git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+vim +NeoBundleInstall +q
 
 cd
 if [ ! -d ./tmp ]; then
