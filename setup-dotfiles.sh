@@ -27,6 +27,10 @@ if [ -f ./.zlogin ]; then
     mv ./.zlogin ./work/
 fi
 
+if [ -f ./.zshenv ]; then
+    mv ./.zshenv ./work/
+fi
+
 if [ -f ./.zshrc ]; then
     mv ./.zshrc ./work/
 fi
@@ -39,6 +43,7 @@ ln -s ./dot_files/.perltidyrc ./.perltidyrc
 ln -s ./dot_files/.screenrc ./.screenrc
 ln -s ./dot_files/.vimrc ./.vimrc
 ln -s ./dot_files/.zlogin ./.zlogin
+ln -s ./dot_files/.zshenv ./.zshenv
 ln -s ./dot_files/.zshrc ./.zshrc
 
 echo "finished setup dotfiles"
